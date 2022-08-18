@@ -1,0 +1,269 @@
+#+TITLE: Internet scanning and NLP-based classification of a grey literature. Initial report
+#+AUTHOR: Dr W Turbayevsky
+
+#+LaTeX_CLASS_OPTIONS: [a4paper]
+#+LaTeX_HEADER: \usepackage[margin=1in, headheight=40pt]{geometry}
+#+LaTeX_HEADER: \let\description\compactdesc
+#+LaTeX_HEADER: \usepackage{fancyhdr}
+#+LaTeX_HEADER: \usepackage{lipsum}
+#+LaTeX_HEADER: \pagestyle{fancy}
+#+LaTeX_HEADER: \lhead{\includegraphics[width=20mm]{logo.png}}
+#+LaTeX_HEADER: \chead{}
+#+LaTeX_HEADER: \rhead{UNDP-HQ}
+#+LaTeX_HEADER: \usepackage{hyperref}
+#+LaTeX_HEADER: \hypersetup{colorlinks,urlcolor=blue}
+
+* Intro
+In 2021, the United Nations Member States[fn:1] in the 2021 Political Declaration on HIV and AIDS: Ending Inequalities and Getting on Track to End AIDS by 2030 committed to the ambitious 10-10-10 targets: less than 10% of countries have restrictive legal and policy frameworks that lead to denial or limitation of access to services by 2025; less than 10% of people living with, at risk of and affected by HIV experience stigma and discrimination by 2025; and less than 10% of women, girls and people living with, at risk of, and affected by HIV experiences gender-based inequalities and sexual and gender-based violence by 2025. The Global Fund Strategy1 and the PEPFAR Country and Regional Operational Plan2 acknowledge the need to address the impact of discriminatory and punitive laws, policies and practices, and both commit to fostering enabling legal and policy environments for increased access and uptake of HIV services. These commitments build on the work of the Global Commission on HIV and the Law (GCHL). The GCHL’s 2012 report and its 2018 supplement presented actionable recommendations for addressing laws, policies and practices that impede effective, rights-based HIV responses. 
+
+Despite the long-term nature of law reform, the past few years have witnessed some successful initiatives at tackling discriminatory and punitive laws, policies and practices. The 2021 independent evaluation of the Global Commission on HIV and the Law,3 and the HIV Justice Network’s Advancing HIV Justice 3: Growing the Global Movement Against HIV Criminalisation4 highlighted some of these initiatives and the approaches and partnerships that contributed to their successes. On the road to law reform, governments, civil society, communities of people living with and affected by HIV, including key populations have deployed various approaches, strategies and tactics to mitigate the impact of discriminatory and punitive laws, policies and practices, and increase access to HIV services. Understanding how and where these strategies have been used and to what effect will be useful to supporting countries in achieving the 10-10-10 targets. 
+
+To this end, UNDP is conducting a review of peer-reviewed and grey literature - supported by an Expert Advisory Group - on approaches, strategies, tactics for reforming and/or mitigating the impact of punitive and discriminatory laws, policies and practices on access to services for people living with HIV and key populations. 
+
+* Project description
+** User stories
+ - We would like to search the internet for publications (grey literature) on examples of initiatives to reform laws and policies affecting HIV key populations across various regions. The main objective is create a compendium  that countries can draw examples from in order to reform their own laws and policies.
+- Grey literature is literature that is not formally published in peer-reviewed books and journal articles. They may include publications by governments, technical paper and report of UN entities, civil society organisations, community based organisations, professional organisations, academic organisations.
+- Our search terms are not exhaustive but include – laws, policies, law reform, decriminalisation, penal law, criminal law, penal administration, prosecution, same sex conduct, LGBTI, drug use, sex work, people living with HIV, policy intervention, advocacy, HIV key populations, strategies, tactics, approaches, policy change, repeal, risk mitigation, access to justice, non-discrimination, human rights, law enforcement, judiciary, parliamentarians, civil society, capacity building, digital technologies, digital rights, strategic litigation, etc
+- The final output will be a report of the analysis of available literature with an ANNEX compendium of links to all the relevant literature. It will be great if the API tool can extract high level summaries or abstract of the literature.
+
+** Output expected
+It is expected the contractor to explore the set of available tools to resolve the following tasks:
+- find in the internet and/or specific sites pages or papers (usually, pdf-files) which is relevant to the topics selected above (such as laws, policies, law reform, decriminalisation etc.)
+- provide additional web-pages and papers classification using Natural Language Processing (NLP) (optional)
+- create and fill the database (DB) which has a set of links, classification and additional fields (if needed). The best DB type should be suggested.
+- extract summary from the links (web-pages and papers) for further analysis (optional) 
+
+* Plan and methodology
+To find the best tools we have to:
+- identify and limit the area of implementation for each tool
+- create a performance or any other metrics or criteria to assess and order the tools to be analysed
+
+** Definition of terms
+The punitive and discriminatory laws and policies that will be considered in this review are as follows[fn:1]:
+    1. Laws and policies  related to sex work, same-sex sexual behaviour, transgender people, people who use drugs (PWUD), including the criminalization of the personal possession of drugs. 
+    2. Laws and policies criminalising HIV transmission, exposure and non-disclosure
+    3. Age of consent laws and policies
+Approaches, strategies and tactics are ways in which stakeholders have sought to reform or mitigate the impact of punitive and discriminatory laws and policies, including criminalisation. Examples of approaches, strategies and tactics include community mobilisation; capacity building of key stakeholders, such as law enforcement; strategic litigation; research and data collection; policy intervention; and parliamentary action and engagement. 
+
+Impacting on access to services for people living with HIV and key populations includes, but is not limited to stigma, discrimination, violence, and access to justice and HIV, health and other basic services.
+
+** Inclusion criteria
+To be included[fn:1] in the review an article should meet the following criteria: 
+    1. Published in a peer-reviewed journal or grey literature publication between June 2018 and June 2022. 
+    2. Evaluate, analyse, assess, review or describe tried approaches, strategies or tactics that sought to or did reform, or mitigate the impact of laws or policies impacting on access to services for people living with HIV and key populations as defined above.
+
+Literature that only identifies barriers and proposes potential approaches, strategies or tactics will not be included. Further, literature must directly discuss how the approach, strategy and tactic is seeking to impact punitive and discriminatory laws and policies.
+
+** Search criteria and terms
+The search strategy[fn:1] will use three expansive search components: (1) legal terms, defined broadly to include any references to laws, polices, or rights; (2) interventions, including structural interventions, as well as HIV, health and basic services;  and (3) population terms including various terms used for key populations
+
+** Potential sources
+    - Documents[fn:1] identified by UNDP’s internal experts and external experts in health, human rights and law
+    - For peer-review: PubMed, Web of Science, Social Science Research Network (SSRN), Global Health, International Bibliography of Social Science, HeinOnline, Westlaw, Scopus
+    - For grey literature <<data sources>>: Google scholar, Scopus,  Popline 
+
+** Outline expected
+    1. Introduction[fn:1]
+        a. Background to review, purpose of review and main findings. 
+    2. Methodology
+        a. Analytical framework, including search criteria/terms, type of information to be collected and potential sources 
+        b. Use of data analytics to search grey literature - FLOWZ
+        c. Purpose of desk review and key informant interviews
+    3. Results and discussion
+    4. Gaps in the research
+    5. Conclusion, lessons learned and next steps
+    6. Appendices
+
+** Assumptions
+- having no specific location or sites to be scanned, we assume that we can use the common search engine to find the information requested; however, taking into account that a few potential data sources mentioned in section [[data sources]] have been provided by the client, we may start from scanning the specific sources
+- for the initial stage the only English web-pages and papers will be analysed; in the future the language set may be extended
+
+* Tools selection
+** Web-search
+# https://developers.google.com/custom-search/v1/reference/rest/v1/cse/list?apix_params=%7B%22cx%22%3A%224bf0e3b320e3d9664%22%2C%22q%22%3A%22coffee%22%7D
+# https://programmablesearchengine.google.com/cse/setup/basic?cx=4bf0e3b320e3d9664
+# https://linuxhint.com/google_search_api_python/
+Initially we do not have a set of sites or locations to be scanned. Therefore, the more generic search engine can be used. There is a list of APIs from the largest IT companies to be tested. We have stopped at [[https://linuxhint.com/google_search_api_python/][Google Search Engine]] [[https://developers.google.com/custom-search/v1/overview][custom search]] [[https://developers.google.com/custom-search/v1/reference/rest][API]] because of it flexibility and great coverness of all the available resources. Additionally, it allows us to scan a specific data formats such as pdf files etc. 
+** NLP
+The NLP tasks may be separated into two categories: 
+- data extraction (if data provided with a specific format such as html, pdf etc)
+- data preparation
+- data processing.
+*** Data extraction
+    The most common data formats to be used in data analysis are html (hyper-text markup language) and pdf (portable document format). Despite the fact that there are many libraries to extract data from the formats mentioned, we decided to pay more attention at [[https://stackoverflow.com/questions/328356/extracting-text-from-html-file-using-python][BeaulifulSoup]] (where some [[https://stackoverflow.com/questions/16206380/python-beautifulsoup-how-to-remove-all-tags-from-an-element][postprocessing]] may be required), to extract data from html, and set of pdf-extractors from the most popular SpaCy [[https://spacy.io/universe][plug-in]] to third-party libraries such as [[https://spacy.io/universe/project/spacypdfreader][spadypdfreader]] etc.
+*** Data preparation
+Data preparation usually include a set of basic transformation such as tokenisation, lemmasation, removing stop-words and unnecessary punctuation, define point of speech (POS), identification of words and sentences relationships etc. Accordingly to our analysis the most flexible and fast solution to perform this task may be [[https://spacy.io/][SpaCy]] library.
+*** Data processing
+Strictly speaking, data processing include data preparation phase which is described above. In this context, data processing means selection, creation and testing an NLP model. There are set of instruments available to perform such kind of task, starting from scikit-learn package that allows us to resolve any kind of modelling excepting deep neural networking (DNN), and ending by advanced DNN frameworks such as transformers, TensorFlow, PyTorch etc. The first one is rather a framework-over-framework that allows to use most of popular graph-based platform inside. The latest two are the examples of highly flexible framework to let them build any kind of tasks from visual object recognition to NLP tasks. 
+Out tests showed that even the simple SVC (Supporting Vector machine based Classifier) allowed to resolve the NLP classification task, SpaCy has their own add-on to perform a classification task. Taking into account that SpaCy is recommended to be used for NLP pre-processing, we would suggest the same framework to be used to resolve a [[https://spacy.io/universe/project/classyclassification][classification]] task.
+   
+** Database
+At the initial stage, the most simple but powerful SQLite database would be suggested. The benefits of using such a database are:
+- saving all the data into one file
+- no extra libraries required
+- wide languages support
+- can save up to 2TB into a file
+
+However, to save all the cross-related connections between entities, more specific graph-based databases such as Neo4j may be recommended. The benefit of using such a DBs is that it allows us to save all the connections and easily and fast to find all the entities based on their connections and records.
+* Performance testing
+* Samples of codes
+* Conclusion
+- based on the analysis provided we would suggest using of Google Custom Search API for websites and paper searching. However, if the set of sites are well known, this step can be passed.
+- for data extraction we would suggest using of BeautifulSoup (for html) and spadypdfreader (for pdfs); for textual data preparation and processing (classification) SpaCy provides the most flexible and reliable solution
+- for initial data saving SQLite may be the best solution. When relationship analysis required, a graph-based database such as Neo4j may be used. 
+
+
+#+begin_comment
+1. Frame the problem and look at the big picture.
+2. Get the data.
+3. Explore the data to gain insights.
+4. Prepare the data to better expose the underlying data patterns to Machine Learning algorithms.
+5. Explore many different models and shortlist the best ones.
+6. Fine-tune your models and combine them into a great solution.
+7. Present your solution.
+8. Launch, monitor, and maintain your system.
+
+Frame the Problem and Look at the Big Picture
+1. Define the objective in business terms.
+2. How will your solution be used?
+3. What are the current solutions/workarounds (if any)?
+4. How should you frame this problem (supervised/unsupervised, online/offline,
+etc.)?
+5. How should performance be measured?
+6. Is the performance measure aligned with the business objective?
+7. What would be the minimum performance needed to reach the business objec‐
+tive?
+8. What are comparable problems? Can you reuse experience or tools?
+9. Is human expertise available?
+10. How would you solve the problem manually?
+11. List the assumptions you (or others) have made so far.
+12. Verify assumptions if possible.
+
+Get the Data
+Note: automate as much as possible so you can easily get fresh data.
+1. List the data you need and how much you need.
+2. Find and document where you can get that data.
+3. Check how much space it will take.
+4. Check legal obligations, and get authorization if necessary.
+5. Get access authorizations.
+6. Create a workspace (with enough storage space).
+7. Get the data.
+8. Convert the data to a format you can easily manipulate (without changing the
+data itself).
+9. Ensure sensitive information is deleted or protected (e.g., anonymized).
+10. Check the size and type of data (time series, sample, geographical, etc.).
+11. Sample a test set, put it aside, and never look at it (no data snooping!).
+
+Explore the Data
+Note: try to get insights from a field expert for these steps.
+1. Create a copy of the data for exploration (sampling it down to a manageable size
+if necessary).
+2. Create a Jupyter notebook to keep a record of your data exploration.
+3. Study each attribute and its characteristics:
+• Name
+• Type (categorical, int/float, bounded/unbounded, text, structured, etc.)
+• % of missing values
+• Noisiness and type of noise (stochastic, outliers, rounding errors, etc.)
+• Usefulness for the task
+• Type of distribution (Gaussian, uniform, logarithmic, etc.)
+4. For supervised learning tasks, identify the target attribute(s).
+5. Visualize the data.
+6. Study the correlations between attributes.
+7. Study how you would solve the problem manually.
+8. Identify the promising transformations you may want to apply.
+9. Identify extra data that would be useful (go back to “Get the Data” on page 756).
+10. Document what you have learned.
+
+Prepare the Data
+Notes:
+• Work on copies of the data (keep the original dataset intact).
+• Write functions for all data transformations you apply, for five reasons:
+— So you can apply these transformations in future projects
+— To clean and prepare the test set
+— To clean and prepare new data instances once your solution is live
+— To make it easy to treat your preparation choices as hyperparameters
+1. Data cleaning:
+• Fix or remove outliers (optional).
+• Fill in missing values (e.g., with zero, mean, median...) or drop their rows (or
+columns).
+2. Feature selection (optional):
+• Drop the attributes that provide no useful information for the task.
+3. Feature engineering, where appropriate:
+• Discretize continuous features.
+• Decompose features (e.g., categorical, date/time, etc.).
+• Add promising transformations of features (e.g., log(x), sqrt(x), x 2 , etc.).
+• Aggregate features into promising new features.
+4. Feature scaling:
+• Standardize or normalize features.
+
+Shortlist Promising Models
+Notes:
+• If the data is huge, you may want to sample smaller training sets so you can train
+many different models in a reasonable time (be aware that this penalizes complex
+models such as large neural nets or Random Forests).
+• Once again, try to automate these steps as much as possible.
+1. Train many quick-and-dirty models from different categories (e.g., linear, naive
+Bayes, SVM, Random Forest, neural net, etc.) using standard parameters.
+2. Measure and compare their performance.
+• For each model, use N-fold cross-validation and compute the mean and stan‐
+dard deviation of the performance measure on the N folds.
+3. Analyze the most significant variables for each algorithm.
+4. Analyze the types of errors the models make.
+• What data would a human have used to avoid these errors?
+5. Perform a quick round of feature selection and engineering.
+6. Perform one or two more quick iterations of the five previous steps.
+7. Shortlist the top three to five most promising models, preferring models that
+make different types of errors.
+
+Fine-Tune the System
+Notes:
+• You will want to use as much data as possible for this step, especially as you move
+toward the end of fine-tuning.
+• As always, automate what you can.
+1. Fine-tune the hyperparameters using cross-validation:
+• Treat your data transformation choices as hyperparameters, especially when
+you are not sure about them (e.g., if you’re not sure whether to replace missing
+values with zeros or with the median value, or to just drop the rows).
+• Unless there are very few hyperparameter values to explore, prefer random
+search over grid search. If training is very long, you may prefer a Bayesian
+optimization approach (e.g., using Gaussian process priors, as described by
+Jasper Snoek et al.). 1
+2. Try Ensemble methods. Combining your best models will often produce better
+performance than running them individually.
+3. Once you are confident about your final model, measure its performance on the
+test set to estimate the generalization error.
+Don’t tweak your model after measuring the generalization error:
+you would just start overfitting the test set.
+
+Present Your Solution
+1. Document what you have done.
+2. Create a nice presentation.
+• Make sure you highlight the big picture first.
+3. Explain why your solution achieves the business objective.
+4. Don’t forget to present interesting points you noticed along the way.
+• Describe what worked and what did not.
+• List your assumptions and your system’s limitations.
+5. Ensure your key findings are communicated through beautiful visualizations or
+easy-to-remember statements (e.g., “the median income is the number-one pre‐
+dictor of housing prices”).
+
+Launch!
+1. Get your solution ready for production (plug into production data inputs, write
+unit tests, etc.).
+2. Write monitoring code to check your system’s live performance at regular inter‐
+vals and trigger alerts when it drops.
+• Beware of slow degradation: models tend to “rot” as data evolves.
+• Measuring performance may require a human pipeline (e.g., via a crowdsourc‐
+ing service).
+• Also monitor your inputs’ quality (e.g., a malfunctioning sensor sending ran‐
+dom values, or another team’s output becoming stale). This is particularly
+important for online learning systems.
+3. Retrain your models on a regular basis on fresh data (automate as much as
+possible).
+#+end_comment
+
+
+* Footnotes
+
+[fn:1]: Information from "Evidence review: Approaches, strategies and tactics for reforming and/or mitigating the impact of punitive and discriminatory laws, policies and practices on access to services for people living with HIV and key populations. Methodology and Outline" 
